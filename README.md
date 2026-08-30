@@ -44,22 +44,4 @@ A collection of my **Data Structures & Algorithms** solutions solved in **Python
 
 ---
 
-## 📂 Repository Structure
-
-```text
-leetcode-solutions/
-├── Arrays/
-├── Strings/
-├── HashMap/
-├── TwoPointers/
-├── SlidingWindow/
-├── BinarySearch/
-├── LinkedList/
-├── Stack/
-├── Trees/
-└── README.md
-```
-
----
-
 > **Consistency beats intensity.** One quality problem every day is better than solving 20 once a month.
