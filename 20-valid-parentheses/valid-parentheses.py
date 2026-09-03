@@ -17,7 +17,4 @@ class Solution:
                         stack.pop()
                     else:
                         return False
-        if stack == []:
-            return True
-        else:
-            return False
+        return not stack
