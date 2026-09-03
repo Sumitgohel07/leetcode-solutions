@@ -10,7 +10,7 @@ class Solution:
             if s[i] in ["(","{","["]:
                 stack.append(s[i])
             else:
-                if stack == []:
+                if not stack:
                     return False
                 else:
                     if stack[-1]==pairs[s[i]]:
