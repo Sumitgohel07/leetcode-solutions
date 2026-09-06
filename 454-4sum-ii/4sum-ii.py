@@ -1,7 +1,7 @@
 class Solution:
     def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
         dict1 = {}
-        sum = 0
+        counter = 0
         for i in nums1:
             for j in nums2:
                 dict1[i+j] = dict1.get(i+j,0) + 1
@@ -9,5 +9,5 @@ class Solution:
         for i in nums3:
             for j in nums4:
                 if -(i+j) in dict1:
-                    sum+=dict1[-(i+j)]
-        return sum
+                    counter+=dict1[-(i+j)]
+        return counter
