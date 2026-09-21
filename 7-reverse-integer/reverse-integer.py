@@ -1,21 +1,16 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        result = 0 
-        flag = 0
-        if x<0:
-            flag = 1
-            x = -x  
-        while(x>0):
-            ld = x % 10
-            result = ld + result*10 
-            x = x // 10
-        if (-(2**31) <= result <= (2**31)-1):
-            if flag == 1:
-                return -result
-            else:
-                return result
+        output = 0
+        flage = 0
+        if x < 0:
+            flage = 1
+            x = -(x)
+        while(x > 0):
+            reminder = x % 10
+            output = (output*10 + reminder)
+            x = x//10
+        output =  output if flage==0 else -(output)
+        if output >= -(2**31) and output <= ((2**31)-1):
+            return output
         else:
             return 0
-
-
-
